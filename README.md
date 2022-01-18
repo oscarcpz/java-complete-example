@@ -47,6 +47,16 @@ To work with Maven with default structure you have to create the following direc
 * Javadoc is your friend
 * DEBUG - if you have running errors the best way to detect a fix them is using the debugger
 
+## Git flow commands
+
+1. Clone from repo `$ git clone git@github.com:oscarcpz/java-complete-example.git`
+2. Create **develop** branch if it does not exists `$ git push -u origin develop`
+3. Check status `$ git status`
+4. Change to **develop** branch `$ git checkout develop`
+5. Add all modified files `$ git add`
+6. Commit changes `$ git commit -m "Changes..."`
+7. Push to repo `$ git push`
+
 ## References
 
 * [Maven](https://maven.apache.org/)
