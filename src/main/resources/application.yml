@@ -1,0 +1,13 @@
+spring:
+  main:
+    banner-mode: console
+  application:
+    name: JavaCompleteExample
+    version: 0.1-Sanpshot
+
+calculator:
+  src: example/input.file
+  dst: example/output.file
+  delimiter: ;
+  encoding: utf-8
+  date_pattern: yyyyMMddHHmm

@@ -2,9 +2,10 @@
 <configuration>
     <include resource="org/springframework/boot/logging/logback/default.xml" />
 
-    <property name="LOG_FILE" value="jce"/>
+    <!-- Stop output INFO at start -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
     <property name="CONSOLE_LOG_PATTERN" value="%date [%thread] %-5level %logger{10} - %message%n"/>
-    <property name="FILE_LOG_PATTERN" value="%date{HH:mm:ss.SSS} [%thread] %-5level %logger{10} - %message%n"/>
 
     <logger name="com.oscarcpz.jce" level="DEBUG"/>
 
@@ -17,19 +18,7 @@
         </encoder>
     </appender>
 
-    <appender name="FILE_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <encoder>
-            <pattern>${FILE_LOG_PATTERN}</pattern>
-        </encoder>
-        <file>${LOG_FILE}.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>${LOG_FILE}.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
-            <maxHistory>20</maxHistory>
-        </rollingPolicy>
-    </appender>
-
     <root level="DEBUG">
-        <appender-ref ref="FILE_APPENDER" />
         <appender-ref ref="CONSOLE_APPENDER" />
     </root>
 

@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service
-public class CalculatorService implements ApplicationRunner {
+public class CalculatorServiceImpl implements ApplicationRunner, CalculatorService {
 
     @Value("${calculator.src}")
     private String src;
@@ -30,9 +30,9 @@ public class CalculatorService implements ApplicationRunner {
     @Value("${calculator.date_pattern}")
     private String datePattern;
 
-    private final Logger log = LoggerFactory.getLogger(CalculatorService.class);
+    private final Logger log = LoggerFactory.getLogger(CalculatorServiceImpl.class);
 
-    public CalculatorService() {
+    public CalculatorServiceImpl() {
         log.debug("Prepared");
     }
 
@@ -93,6 +93,7 @@ public class CalculatorService implements ApplicationRunner {
             for(String element : lineSplitted) {
                 if(counter == 0) {
                     //is the first element. The first element is the line number
+                    listResult.add(element); //keep line number
                     counter++;
                     continue;
                 }
