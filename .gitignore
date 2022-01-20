@@ -2,6 +2,7 @@
 *.class
 
 # Log file
+logs/
 *.log
 
 # BlueJ files
@@ -27,5 +28,13 @@ hs_err_pid*
 
 example/output*
 
+# Maven
 target/
+
+# Mac
 .DS_Store
+
+# Terraform
+jenkins_home/
+.terraform/
+.terraform*

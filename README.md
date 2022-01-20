@@ -2,6 +2,8 @@
 
 ## Project description
 
+xxx
+
 ## Files detailed
 
 * .gitignore - contains extensions, files and directories which can't be uploaded to the repo. It means, repo should only have code files. You have to avoid upload files such as:
@@ -56,6 +58,30 @@ To work with Maven with default structure you have to create the following direc
 5. Add all modified files `$ git add`
 6. Commit changes `$ git commit -m "Changes..."`
 7. Push to repo `$ git push`
+
+### Move develop to main
+1. `$ git checkout main`
+2. `$ git merge develop`
+3. `$ git commit -m "merge from develop"`
+4. `$ git push`
+
+## Play
+
+### Requirements
+
+* [Maven](https://maven.apache.org/install.html)
+* [Java](https://java.com/en/download/help/download_options.html)
+
+### Build project - Maven
+
+~~~
+$ mvn clean package
+~~~
+
+### Run project
+
+1. Jar created and directory "example" have to be in the same directory
+2. `$ java -jar jce-0.0.1-SNAPSHOT.jar`
 
 ## References
 
