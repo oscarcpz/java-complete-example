@@ -11,7 +11,7 @@ public class LineUtility {
     /**
      * Perform operation over a given element
      * @param element element as String
-     * @return 0 if error, else element calculated
+     * @return '-' if error, else element calculated
      */
     public static String operation(final String element) {
         if(StringUtils.isEmpty(element)) {

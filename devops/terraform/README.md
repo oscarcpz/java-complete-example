@@ -4,6 +4,9 @@
 
 ## Commands
 
+If you run Terraform in a MacBook M1 ARM, you have to download sonarqube image first
+`$ docker pull --platform linux/x86_64 sonarqube:9-community`
+
 * `$ terraform init` - Prepare your working directory for other commands
 * `$ terraform fmt` - Reformat your configuration in the standard style
 * `$ terraform validate` - Check whether the configuration is valid

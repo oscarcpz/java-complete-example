@@ -33,8 +33,9 @@
             <properties>
                 <!-- Optional URL to server. Default value is http://localhost:9000 -->
                 <sonar.host.url>
-                    http://sonarqube:9000 <!-- the host is the name of the container -->
+                    http://172.16.0.222:19000 <!-- the host is the name of the container -->
                 </sonar.host.url>
+                <sonar.login>ef15ff4fad66c01524e7a79591eeb5e0c409f3f7</sonar.login>
             </properties>
         </profile>
     </profiles>

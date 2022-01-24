@@ -2,7 +2,9 @@
 
 ## Project description
 
-xxx
+A complete example in Java to show the basic tips to develop in Java
+
+The project is simple. It takes a file, read line by line, and, each line, is splitted to operate element by element.
 
 ## Files detailed
 
