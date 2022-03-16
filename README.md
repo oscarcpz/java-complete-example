@@ -40,7 +40,7 @@ To work with Maven with default structure you have to create the following direc
 * Avoid "+" in string concatenation - use "String.format" instead. This method is more secure and efficient
 * Be paranoid - you have to be paranoid checking potential errors like null pointers
 * Delegate functionality - don't create a huge class with the whole code, divide functionality in little pills
-* Write code thinking the reviewr is a serial killer
+* Write code thinking the reviewer is a serial killer
   * use autoexplained variable names
   * use comments inside the code
   * use java doc for all your methods
