@@ -33,7 +33,7 @@ To work with Maven with default structure you have to create the following direc
   * FileUtils - utilities to manage files
   * StringUtils - utilities to manage strings
   * log4j - log framework
-* Use a logger - Never, never, never use _println_, because you could overload the disk. In this example we are working with log4j.
+* Use a logger - Never ever use _println_, because you could overload the disk. In this example we are working with log4j.
 * Avoid string constants inside code - we strongly recommend using a properties files to store all the constants. In this project we are working with **application.yml**
 * Use custom exceptions - create custom exceptions to manage and control your errors
 * Don't kill the messenger - if you catch an exception, please log the message that you catch
