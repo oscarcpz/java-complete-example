@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>9</java.version>
 
-        <maven.test.skip>false</maven.test.skip>
+        <maven.test.skip>true</maven.test.skip>
     </properties>
 
     <profiles>
@@ -35,7 +35,7 @@
                 <sonar.host.url>
                     http://172.16.0.222:19000 <!-- the host is the name of the container -->
                 </sonar.host.url>
-                <sonar.login>ef15ff4fad66c01524e7a79591eeb5e0c409f3f7</sonar.login>
+                <sonar.login>4ba2e826998fe638ca513dc379a58afda2f24a48</sonar.login>
             </properties>
         </profile>
     </profiles>
